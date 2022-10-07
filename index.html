@@ -4,8 +4,7 @@ title: Home
 ---
 
 {%- for media in photos.b5sgybo.media %}
-<a href="/cpsc349-project1/photos/{{media.id}}"
-	><img src="{{media.src.tiny}}" alt="{{media.alt}}"
-/></a>
-
+	<a href="/cpsc349-project1/photos/{{media.id}}">
+		<img src="{{media.src.tiny}}" alt="{{media.alt}}"/>
+	</a>
 {% endfor %}
