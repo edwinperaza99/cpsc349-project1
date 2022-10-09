@@ -1,10 +1,18 @@
 ---
 layout: base
-title: This is a collection of numerous flowers of various species from all around the world!
+title: Home
 ---
 
-{%- for media in photos.b5sgybo.media %}
-	<a href="/cpsc349-project1/photos/{{media.id}}">
-		<img src="{{media.src.tiny}}" alt="{{media.alt}}"/>
-	</a>
-{% endfor %}
+<section>
+	<h2>
+		This is a collection of numerous flowers of various species from all around
+		the world!
+	</h2>
+	{%- for media in photos.b5sgybo.media %}
+	<aside>
+		<a href="/cpsc349-project1/photos/{{media.id}}">
+			<img src="{{media.src.tiny}}" alt="{{media.alt}}" />
+		</a>
+	</aside>
+	{% endfor %}
+</section>
