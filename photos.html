@@ -7,17 +7,19 @@ pagination:
 permalink: "/photos/{{ flower.id | slug }}/index.html"
 ---
 
-<figure>
-	<img src="{{ flower.src.large }}" alt="{{ flower.alt }}" />
-</figure>
-<p><em>{{flower.alt}}</em></p>
-<p>
-	Photographer:
-	<a
-		href="{{flower.photographer_url}}"
-		target="_blank"
-		rel="noopener noreferrer"
-		>{{flower.photographer}}</a
-	>
-</p>
-<p>Photograph ID: {{flower.photographer_id}}</p>
+<section>
+	<figure>
+		<img src="{{ flower.src.large }}" alt="{{ flower.alt }}" />
+	</figure>
+	<p><em>{{flower.alt}}</em></p>
+	<p>
+		Photographer:
+		<a
+			href="{{flower.photographer_url}}"
+			target="_blank"
+			rel="noopener noreferrer"
+			>{{flower.photographer}}</a
+		>
+	</p>
+	<p>Photograph ID: {{flower.photographer_id}}</p>
+</section>
